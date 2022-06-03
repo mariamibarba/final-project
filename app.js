@@ -1,7 +1,7 @@
 // slider
 const slideItems = document.querySelectorAll('.sliders-cont');
 const rectangles = document.querySelectorAll('.rectangle');
-const sliders = document.querySelectorAll('.content-box');
+const sliders = document.querySelectorAll('.about-recomendatins');
 
 
 let myInterval=null;
@@ -67,5 +67,39 @@ window.addEventListener('scroll', () => {
         hideProgress();
     }
 });
+
+// rectangles
+rectangles.forEach((rectangle ,rectanglesindex) => {
+  rectangle.addEventListener('click', () => {
+      handleRecClick(rectanglesindex);
+      
+  });
+});
+
+function sliderButtons() {
+sliders.forEach((item, i) => {
+  if(activeIndex === i){
+    item.classList.add('active');
+
+  } else {
+    item.classList.remove('active');
+  }
+})
+
+rectangles.forEach((item, i) => {
+  if(activeIndex === i){
+    item.classList.add('active');
+
+  } else {
+    item.classList.remove('active');
+  }
+})
+}
+
+function handleRecClick(nextIndex){
+activeIndex = nextIndex;
+sliderButtons();
+
+}
 
 
