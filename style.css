@@ -516,7 +516,7 @@
     line-height: 36px;
     color: #2ED279;
     margin-bottom: 5px;
-    font-family: 'Poppins';
+    
 
 }
 .articles-title h3{
@@ -524,7 +524,7 @@
     line-height: 36px;
     color: #2E2E2E;
     margin-bottom: 70px;
-    font-family: 'Poppins';
+    
 
 }
 
@@ -624,103 +624,251 @@
    letter-spacing: 1.12px;
    color: #888888;
    margin-bottom: 10px;
-   font-family: 'Lato';
+   
 }
 .article-content h3{
     font-size: 40px;
     line-height: 44px;
     color: #161616;
     margin-bottom: 25px;
-    font-family: 'Lato';
+    
 }
 .article-content p{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.48px;
     color: #494949;
-    font-family: 'Lato';
+    
 }
 /* rosa team sections */
-.team-section_container{
-    max-width:1200px ;
-    width: 100%;
-    background-color: white;
-    margin: 20px auto;
-    padding: 0 15px;
-}
-
-.rows{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    grid-gap: 10px;
-}
-.service1{
-
+.rosa-section{
+   
+    margin-top: 20px;
+    margin-bottom: 180px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 2px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: transparent;
-    background-color: #FAFAFA;
+    
+}
+.roca-cont {
+    margin-top: 150px;
+}
+.rosa-content{
+    margin: 40px;
     width: 110px;
     height: 110px;
+   
 
 }
-.service1:hover{
-    width: 230px;
-    height: 190px;
+
+
+.rosa-content{
+    position: relative;
 }
-.service1 img{
-    width: 70px;
-    margin-bottom: 20px;
-}
-.service1 h3{
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0.44px;
-}
-.overlays{
+.about-company{
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 160%;
+    height: 150%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px #E93656 solid;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
     opacity: 0;
-    color: #FFFFFF;
-    transform: rotatey( 180deg );
+    transition: opacity 0.25s;
+}
+.about-company > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
 }
 
-.overlays h4{
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0.44px;
-    margin-bottom: 30px;
-}
-
-.overlays p{
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.42px;
-}
-
-.service1:hover{
-    background-color: #15263E;
-    transition: all 1s;
-    cursor: pointer;
-    transform: rotatey( 180deg );
-}
-
-.service1:hover .overlay{
+.about-company:hover{
     opacity: 1;
-    transition: all .5s;
+    cursor: pointer;
 }
 
-.service1:hover img{
-    opacity: 0;
-    transition: all .5s;
+.about-company:hover > *{
+    transform: translateX(0);
+
+}
+.about-company p{
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.39px;
+    color: #626262;
+    margin-bottom: 10px;
+    
+}
+.about-company h3{
+    font-size: 16px;
+    line-height: 28px;
+    color: #161616;
+    letter-spacing: 0.32px;
+    margin-bottom: 10px;
+    
+}
+/* contact */
+.contant-section{
+    width: 100%;
+    height: 660px;
+    background-image: url('images/Layer 5.png');
+    background-color: #000000;
+    
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.column-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.form-title{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title h2{
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 1.35px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+
+}
+
+.form-title span{
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0.51px;
+    color: #EEEEEE;
+    margin-bottom: 46px;
+    font-family: 'Poppins';
+
+}
+
+.name-form{
+    width: 290px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+input{
+    font-size: 10px;
+    line-height: 52px;
+    color: #515151;
+    padding-left: 30px;
+}
+
+.three-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.three-form div{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 900px;
+    height: 110px;
+    padding: 30px;
+    outline: none;
+}
+
+#send-btn{
+    border: 2px solid #E93656;
+    background-color: rgb(254, 235, 238);
+    color: #E93656;
+    font-size: 12px;
+    line-height: 50px;
+    letter-spacing: 0.96px;
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+#send-btn:hover{
+    background-color: #E93656;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+} 
+/* footer */
+.footer-content{
+    width: 100%;
+    height: 490px;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-content{
+    
+    background-color:#282828 ;
+}
+.title-cont{
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+
+}
+.title-cont h2{
+    font-size: 55px;
+    line-height: 76px;
+    letter-spacing: 1.66px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+    font-family: 'Poppins';
+
+}
+.title-cont span{
+    font-size: 55px;
+    line-height: 76px;
+    color: #d83838;
+}
+.footer-content p{
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.09px;
+    color: #A5A5A5;
+    padding: 0 300px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+.footer-section-second{
+    width: 100%;
+    height: 82px;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: #A0A8B7;
+    
+}
+.footer-socials img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+
+
+}
+
+.white-span{
+    color: #FFFFFF;
+    font-family: 'Lato';
+}
