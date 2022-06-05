@@ -370,7 +370,9 @@
     margin-bottom: 30px;
     font-family: 'Roboto Mono';
 }
-
+.addserv{
+    display: none;
+}
 .overlay p{
     font-size: 14px;
     line-height: 26px;
