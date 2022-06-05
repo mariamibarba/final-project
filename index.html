@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Mariam Barbakadze">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:url"                content="mariamibarba.github.io/final-project/" />
     <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="final project" />
+    <meta property="og:title"              content="smart-academy final project" />
     <meta property="og:description"        content="final project about me" />
     <meta property="og:image"              content="images/IMG-8517.jpg" />
     
@@ -578,23 +578,23 @@
                             <h2>CONTACT US</h2>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                         </div>
-                        <form class="main-forms" action="/" method="post"> 
+                        <form class="main-forms" id="sign-up" action="/" method="post"> 
                             <div class="three-form">
                                 <div class="form-big">
                                     <label >
-                                        <input class="name-form" name="name" type="text" placeholder="Your Name*">
+                                        <input id="firstname" class="name-form" name="name" type="text" placeholder="Your Name*">
                                         <p class="error-message"></p>
                                     </label>
                                 </div>
                                 <div class="form-big">
                                     <label >
-                                        <input class="name-form" name="name" type="text" placeholder="Email Address*">
+                                        <input id="email"class="name-form" name="name" type="text" placeholder="Email Address*">
                                         <p class="error-message"></p>
                                     </label>
                                 </div>
                                 <div class="form-big">
                                     <label >
-                                        <input class="name-form" name="name" type="text" placeholder="Your Website*">
+                                        <input id="website" class="name-form" name="name" type="text" placeholder="Your Website*">
                                         <p class="error-message"></p>
                                     </label>
                                 </div>
@@ -605,11 +605,15 @@
                             <div class="column-row">
                                 <div class="form-big">
                                     <label>
-                                       <textarea name="user-message" id="user-message" cols="30" rows="5" placeholder="Message*"></textarea>
+                                       <textarea name="user-message"id="message" id="user-message" cols="30" rows="5" placeholder="Message*"></textarea>
                                     </label>
                                 </div>
                       
-                                <button id="send-btn" type="submit">SEND MESSAGE</button>
+                                <button id="send-btn" class="modal-close" type="submit">SEND MESSAGE</button>
+                                <div  class="modal my-modal">
+                                    <p class="modal-content">Thank you for getting in touch! We appreciate you contacting us.</p>
+                                    <button  id="close-btn" class="modal-close"  type="submit">Close</button>
+                                </div>
                             </div>
                         </form>
                     </div>

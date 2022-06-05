@@ -1055,3 +1055,48 @@ textarea{
     color: #FFFFFF;
     font-family: 'Roboto Mono';
 }
+/* modal  */
+.modal {
+    
+    display: none;
+    position: fixed;
+    left: 300px;
+    right: 300px;
+    top:300px;
+    bottom: 500px;
+    background-color:#DDDDDD ;
+    padding: 50px;
+    text-align: center;
+    border-radius: 55px;
+}
+.modal.visible {
+    display: block;
+}
+
+.modal-content{
+    font-size: 20px;
+    color: #171717;
+    
+}
+
+#close-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#close-btn:hover{
+    background-color:#E93656 ;
+}
+
+.form-field .has-error, .form-field .has-error:focus {
+    border: 1px solid red;
+}
+.error-message {
+    color: red;
+}
