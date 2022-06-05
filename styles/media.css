@@ -108,6 +108,7 @@
         margin-left: 20px;
         margin-bottom: 10px;
     }
+    
     .projects-three{
         display: flex;
         flex-direction: column;
@@ -184,12 +185,31 @@
 
     }
     .my-socials{
+        display: none;
+    }
+    .about-contant h4, .my-name{
+        font-size: 20px;
+        font-family: 'Roboto Mono';
+    }
+
+    /* .my-socials{
         display: flex;
         justify-content: center;
         margin-top: 50px;
+    } */
+    .sliders-cont{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
     }
     .my-img{
-        display: none;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 300px;
+        object-fit: contain;
+        margin-top: 100px;
+        margin-left: 70px;
         
     }
     .Satisfied{
@@ -206,6 +226,16 @@
         justify-content: center;
 
     }
+   
+    .my-prof{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .person{
+        margin-left: -50px;
+    }
+   
     .main-pic{
         display: none;
     }
@@ -334,12 +364,31 @@
 
     }
     .my-socials{
+        display: none;
+    }
+    .about-contant h4, .my-name{
+        font-size: 20px;
+        font-family: 'Roboto Mono';
+    }
+
+    /* .my-socials{
         display: flex;
         justify-content: center;
         margin-top: 50px;
+    } */
+    .sliders-cont{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
     }
     .my-img{
-        display: none;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 300px;
+        object-fit: contain;
+        margin-top: 100px;
+        margin-left: 70px;
         
     }
     .Satisfied{
@@ -360,11 +409,26 @@
         display: none;
     }
     .progress{
-        width: 300px;
+       width: 300px;
+        
         height: 10px;
         background-color: #F0F0F0;
         margin-top: 100px;
         border-radius: 6px;
+    }
+    .phone-container{
+        display: flex;
+        justify-content: start;
+    }
+    .phone-cont{
+        display: flex;
+        justify-content: start;
+
+    }
+    .addres_cont{
+        display: flex;
+        justify-content: start;
+
     }
     .contacts{
         display: flex;
@@ -408,6 +472,28 @@
         background-color: #212121;
         margin-left: 20px;
         margin-bottom: 10px;
+    }
+    .aside-box{
+        display: flex;
+        justify-content: baseline;
+        width: 260px;
+        height: 300px;
+        background-color: #15263E;
+        margin-right: 30px;
+    }
+    .project-title{
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 40px;
+        cursor: pointer;
+        font-family: 'Poppins';
+    }
+    .project-title:hover{
+        color: #f3768d;
+        transition: all .5s;
     }
     .projects-three{
         display: flex;
