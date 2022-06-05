@@ -2,6 +2,9 @@
 const slideItems = document.querySelectorAll('.sliders-cont');
 const rectangles = document.querySelectorAll('.rectangle');
 const sliders = document.querySelectorAll('.about-recomendatins');
+const projectsTitles = document.querySelectorAll('.project-title');
+const projects = document.querySelectorAll('.image');
+const pinkLine = document.querySelectorAll('.pink-line');
 
 
 let myInterval=null;
@@ -100,6 +103,61 @@ function handleRecClick(nextIndex){
 activeIndex = nextIndex;
 sliderButtons();
 
+}
+// latest projects
+projectsTitles.forEach((project, projectsindex) => {
+  project.addEventListener('click', () => {
+     handleClick(projectsindex);
+     latestprojects();
+  });
+});
+
+function latestprojects() {
+  projectsTitles.forEach((item, i) => {
+  if(activeIndex === i){
+    item.classList.add('active');
+
+  } else {
+    item.classList.remove('active');
+  }
+});
+
+  pinkLine.forEach((item, i) => {
+    if(activeIndex === i){
+      item.classList.add('active');
+
+    } else {
+      item.classList.remove('active');
+    }
+  });
+}
+
+function handleClick(nextIndex){
+  activeIndex = nextIndex;
+  latestprojects();
+}
+
+
+//  filter projects
+for (i = 0; i < projectsTitles.length; i++) {
+  projectsTitles[i].addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const filter = e.target.dataset.filter;
+    
+    projects.forEach((project) => {
+      if (filter == "all") {
+        project.style.display = "block"
+
+      } else {
+        if (project.classList.contains(filter)) {
+          project.style.display = "block"
+        }else {
+          project.style.display = "none"
+        }
+      }
+    })
+  })
 }
 
 

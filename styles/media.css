@@ -1,0 +1,163 @@
+@media (max-width: 1024px){
+    .about-contant {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 300px;
+        right: 10px;
+
+
+    }
+    .my-socials{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .my-img{
+        display: none;
+        
+    }
+    .Satisfied{
+        position: absolute;
+        top: 800px;
+        right: 80px;
+        font-size: 24px;
+        line-height: 32px;
+        color: #212121;
+    }
+    .more-information-about-me{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .main-pic{
+        display: none;
+    }
+    .progress{
+        width: 300px;
+        height: 10px;
+        background-color: #F0F0F0;
+        margin-top: 100px;
+        border-radius: 6px;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .services_container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .recomendations-cont{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+    }
+    .about-person{
+        display: none;
+    }
+    .about-recomendatins p{
+        display: none;
+    }
+    .lastest-projects-header h2{
+        font-size: 30px;
+        font-family: 'Joan';
+        
+    }
+    .main-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-projects .aside-box{
+        background-color: #212121;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .projects-three{
+        display: flex;
+        flex-direction: column;
+    }
+    .latest-projects{
+        display: flex;
+        justify-content: center;
+    }
+    .articles-title h3{
+        font-size: 30px;
+    }
+    .article-content p{
+        display: none;
+    }
+    .one-block h3{
+        font-size: 20px;
+
+    }
+    .rosa-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rosa-content{
+        display: flex;
+        justify-content: center;
+    }
+    .three-form{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    .form-title{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea{
+        width: auto;
+        height: 110px;
+        padding: 30px;
+        outline: none;
+    }
+    .footer-conten{
+        width: 100%;
+        height: 100px;
+        
+    }
+    .footer-content p{
+        display: none;
+
+    }
+   
+    
+   
+
+    
+
+
+
+}
+
+@media (max-width: 768px){
+   
+
+}
+
+@media (max-width: 480px){
+    
+
+    
+   
+
+}
